@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    margin: .5em 0em;
+    /* align-items: center; */
+}
+
+.main {
+    padding: .5em;
+    border: 1px solid;
+    border-radius: .75em;
+    width: fit-content;
+}
+
+.amount-label {
+    padding-left: .5em;
+}
+
+
+.task {
+    padding: .5em;
+}
+
+.task-label {
+    font-size: large;
+    margin-bottom: .5em;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form label {
+    display: flex;
+}
+
+.task-form label input {
+    margin-left: .75em;
+}
+
+.task-form label p {
+    flex-grow: 1;
+}
+
+.task-form input[type=number] {
+    flex-grow: 1;
+}
+
+.task-form input[type=submit] {
+    width: fit-content;
+    padding: .25em 1em;
+}
+
+.task-form input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.task-form * {
+    margin-bottom: .1em;
+}
