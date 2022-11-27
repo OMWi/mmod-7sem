@@ -15,7 +15,6 @@ function generate5(donationTitles, donationValues) {
     probabilities.some((value, index) => {
         right_border += value;
         if (rand <= right_border) {
-            // count[index]++;
             res += 'Winner: ' + donationTitles[index];
             return true;
         }
@@ -113,10 +112,6 @@ class Task5 extends React.Component {
                     />
                 </form>
                 <table>
-                    <tr>
-                        <th>Game</th>
-                        <th>Sum of donations</th>
-                    </tr>
                     {donations}
                 </table>
 
